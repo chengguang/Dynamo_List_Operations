@@ -1,0 +1,55 @@
+<dynWorkspace X="-288" Y="42" Name="flattenList" Category="Lists">
+  <dynElements>
+    <Dynamo.Elements.dynSymbol type="Dynamo.Elements.dynSymbol" guid="1bfe8130-8538-40ce-b909-f4ac276c899b" nickname="Variable" x="371.75" y="148.5">
+      <Symbol value="lst" />
+    </Dynamo.Elements.dynSymbol>
+    <Dynamo.Elements.dynGetFromList type="Dynamo.Elements.dynGetFromList" guid="0a041dcd-d4b7-4a5f-abff-a1d307b58e12" nickname="Get" x="666.75" y="190" />
+    <Dynamo.Elements.dynDropList type="Dynamo.Elements.dynDropList" guid="2bf307c2-c260-4eab-bae9-e0a6b3003ddf" nickname="Drop" x="864.25" y="283.5" />
+    <Dynamo.Elements.dynDoubleInput type="Dynamo.Elements.dynDoubleInput" guid="be3dda94-bce9-4458-8d99-cef2c603d752" nickname="Number" x="425.25" y="287">
+      <System.Double value="0" />
+    </Dynamo.Elements.dynDoubleInput>
+    <Dynamo.Elements.dynDoubleInput type="Dynamo.Elements.dynDoubleInput" guid="4053c532-b606-426e-802b-18ecee33f34e" nickname="Number" x="666" y="307.75">
+      <System.Double value="1" />
+    </Dynamo.Elements.dynDoubleInput>
+    <Dynamo.Elements.dynConditional type="Dynamo.Elements.dynConditional" guid="553d8a43-96c9-480a-b370-1d9babf50d19" nickname="If" x="1344.25" y="156.5" />
+    <Dynamo.Elements.dynAppend type="Dynamo.Elements.dynAppend" guid="691537bf-1cbc-4c64-a9d8-fe27c3447d14" nickname="Append" x="893.25" y="105.5" />
+    <Dynamo.Elements.dynFunction type="Dynamo.Elements.dynFunction" guid="ae52ff7a-d15e-40b1-8157-0ef6db35d45f" nickname="flattenList" x="1092.75" y="292.75">
+      <Symbol value="flattenList" />
+      <Output value="out" />
+      <Inputs>
+        <Input value="lst" />
+        <Input value="final list" />
+      </Inputs>
+    </Dynamo.Elements.dynFunction>
+    <Dynamo.Elements.dynSymbol type="Dynamo.Elements.dynSymbol" guid="0db3b2d4-7b19-4dff-b724-d59a7a90ec3c" nickname="Variable" x="377.75" y="34.75">
+      <Symbol value="final list" />
+    </Dynamo.Elements.dynSymbol>
+    <Dynamo.Elements.dynLessThan type="Dynamo.Elements.dynLessThan" guid="53ace9ef-c419-4e73-88a6-be1ddce61ba8" nickname="&lt;" x="1170.25" y="30" />
+    <Dynamo.Elements.dynLength type="Dynamo.Elements.dynLength" guid="3434f8f6-89b9-4529-8bd6-c45ced330a54" nickname="Count" x="965.25" y="0" />
+  </dynElements>
+  <dynConnectors>
+    <Dynamo.Connectors.dynConnector start="1bfe8130-8538-40ce-b909-f4ac276c899b" start_index="0" end="0a041dcd-d4b7-4a5f-abff-a1d307b58e12" end_index="1" portType="0" />
+    <Dynamo.Connectors.dynConnector start="1bfe8130-8538-40ce-b909-f4ac276c899b" start_index="0" end="2bf307c2-c260-4eab-bae9-e0a6b3003ddf" end_index="1" portType="0" />
+    <Dynamo.Connectors.dynConnector start="0a041dcd-d4b7-4a5f-abff-a1d307b58e12" start_index="0" end="691537bf-1cbc-4c64-a9d8-fe27c3447d14" end_index="1" portType="0" />
+    <Dynamo.Connectors.dynConnector start="2bf307c2-c260-4eab-bae9-e0a6b3003ddf" start_index="0" end="ae52ff7a-d15e-40b1-8157-0ef6db35d45f" end_index="0" portType="0" />
+    <Dynamo.Connectors.dynConnector start="2bf307c2-c260-4eab-bae9-e0a6b3003ddf" start_index="0" end="3434f8f6-89b9-4529-8bd6-c45ced330a54" end_index="0" portType="0" />
+    <Dynamo.Connectors.dynConnector start="be3dda94-bce9-4458-8d99-cef2c603d752" start_index="0" end="0a041dcd-d4b7-4a5f-abff-a1d307b58e12" end_index="0" portType="0" />
+    <Dynamo.Connectors.dynConnector start="4053c532-b606-426e-802b-18ecee33f34e" start_index="0" end="2bf307c2-c260-4eab-bae9-e0a6b3003ddf" end_index="0" portType="0" />
+    <Dynamo.Connectors.dynConnector start="4053c532-b606-426e-802b-18ecee33f34e" start_index="0" end="53ace9ef-c419-4e73-88a6-be1ddce61ba8" end_index="1" portType="0" />
+    <Dynamo.Connectors.dynConnector start="691537bf-1cbc-4c64-a9d8-fe27c3447d14" start_index="0" end="ae52ff7a-d15e-40b1-8157-0ef6db35d45f" end_index="1" portType="0" />
+    <Dynamo.Connectors.dynConnector start="691537bf-1cbc-4c64-a9d8-fe27c3447d14" start_index="0" end="553d8a43-96c9-480a-b370-1d9babf50d19" end_index="1" portType="0" />
+    <Dynamo.Connectors.dynConnector start="ae52ff7a-d15e-40b1-8157-0ef6db35d45f" start_index="0" end="553d8a43-96c9-480a-b370-1d9babf50d19" end_index="2" portType="0" />
+    <Dynamo.Connectors.dynConnector start="0db3b2d4-7b19-4dff-b724-d59a7a90ec3c" start_index="0" end="691537bf-1cbc-4c64-a9d8-fe27c3447d14" end_index="0" portType="0" />
+    <Dynamo.Connectors.dynConnector start="53ace9ef-c419-4e73-88a6-be1ddce61ba8" start_index="0" end="553d8a43-96c9-480a-b370-1d9babf50d19" end_index="0" portType="0" />
+    <Dynamo.Connectors.dynConnector start="3434f8f6-89b9-4529-8bd6-c45ced330a54" start_index="0" end="53ace9ef-c419-4e73-88a6-be1ddce61ba8" end_index="0" portType="0" />
+  </dynConnectors>
+  <dynNotes>
+    <Dynamo.Elements.dynNote text="A list of lists." x="425" y="190" />
+    <Dynamo.Elements.dynNote text="A list we're going to build into." x="400" y="76" />
+    <Dynamo.Elements.dynNote text="Otherwise, loop..." x="1267" y="277" />
+    <Dynamo.Elements.dynNote text="If the length of the list after &#xD;&#xA;the drop is less than 1..." x="1157" y="92" />
+    <Dynamo.Elements.dynNote text="Return the result of &#xD;&#xA;the last append operation." x="1111" y="181" />
+    <Dynamo.Elements.dynNote text="Get the first element in the list,&#xD;&#xA;which is a list." x="658" y="128" />
+    <Dynamo.Elements.dynNote text="Drop the first element from the &#xD;&#xA;incoming list..." x="861" y="345" />
+  </dynNotes>
+</dynWorkspace>
